@@ -1,35 +1,37 @@
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
-li {
-  padding: 0;
+.card {
+  padding: 20px;
+}
+
+.card-user {
   float: left;
-  list-style: none;
+  margin: 0 20px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
 }
 
-.nav-bar::after {
-  content: '';
-  clear: left;
-  display: block;
+.card-content {
+  float: left;
 }
 
-.nav-bar {
-  border-bottom: 1px solid #E5EAEF;
+h1 {
+  color: #1F2D3D;
+  font-size: 16px;
 }
 
-
-a {
-  display: inline-block;
-  color: #8492A6;
-  font-size: 20px;
-  text-decoration: none;
-  margin-right: 16px;
-  padding: 16px 20px;
+strong {
+  color: #AFB3B9;
+  font-size: 14px;
 }
 
-#selected-a {
-  color: #2860E1;
-  font-weight: 600;
-  border-bottom: 2px solid #2860E1;
+p {
+  margin-top: 12px;
+  color: #79818B;
+  font-size: 16px;
 }
