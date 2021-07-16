@@ -3,7 +3,7 @@ https://raw.githubusercontent.com/rohjs/bugless-101/cc64c9b6e3b2b5a230bd0b0507c2
 */
 
 * {
-  font-family: Roboto;
+  font-family: Mulish;
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
@@ -13,36 +13,49 @@ body {
   background-color: black;
 }
 
-.card {
-  width: 600px;
-  padding: 20px;
-  display: flex;
+.profile {
+  padding: 32px 40px;
+  width: 386px;
+  margin: 50px auto;
   background-color: white;
+  text-align: center;
+  border-radius: 16px; 
 }
 
 img {
-  width: 44px;
-  height: 44px;
+  display: block;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
-  margin-right: 20px;
+  margin: auto;
+  margin-bottom: 16px;
 }
 
-.card-content h1 {
-  font-size: 16px;
-  font-weight: normal;
-  color: #1F2D3D;
+h1 {
+  color: #273444;
+  font-weight: 600;
+  margin-bottom: 4px;
+  font-size: 18px;
+}
+
+p {
+  font-size: 14px;
+  margin-bottom: 32px;
+  color: #8492A6;
+}
+
+.profile-detail {
+  display: flex;
+  justify-content: space-between;
+}
+
+dt {
+  color: #8492A6;
   margin-bottom: 4px;
 }
 
-.card-content strong {
-  font-size: 14px;
-  display: block;
-  color: #AFB3B9;
-  font-weight: 400;
-  margin-bottom: 12px;
-}
-
-.card-content p {
-  font-size: 16px;
-  color: #79818B;
+dd {
+  font-size: 32px;
+  line-height: 40px;
+  color: #0066FF;
 }
