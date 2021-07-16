@@ -1,6 +1,5 @@
 /* 
-https://raw.githubusercontent.com/rohjs/bugless-101/cc64c9b6e3b2b5a230bd0b0507c2e2fe9ec0a2e5/css-basic/position-2/templates/assets/icon-backward.svg 
-https://raw.githubusercontent.com/rohjs/bugless-101/cc64c9b6e3b2b5a230bd0b0507c2e2fe9ec0a2e5/css-basic/position-2/templates/assets/icon-forward.svg
+https://raw.githubusercontent.com/rohjs/bugless-101/cc64c9b6e3b2b5a230bd0b0507c2e2fe9ec0a2e5/css-basic/position-3/templates/assets/icon-close.svg
 */
 
 * {
@@ -13,71 +12,60 @@ body {
   background-color: black;
 }
 
-.card {
+.modal {
   position: relative;
-  margin: 24px auto;
+  font-family: Nunito Sans;
+  width: 671px;
+  margin: auto;
+  padding: 32px 40px;
   background-color: white;
-  width: 400px;
-  height: 354px;
-  overflow: hidden;
 }
 
-.photo {
-  width: 400px;
-  height: 240px;
-}
-
-button {
+.close-button {
+  position: absolute;
+  top: 6px;
+  right: 6px;
   width: 24px;
   height: 24px;
-  border: 0;
+  border: 0px;
   background-color: rgba(0, 0, 0, 0);
+  background-image: url('https://raw.githubusercontent.com/rohjs/bugless-101/cc64c9b6e3b2b5a230bd0b0507c2e2fe9ec0a2e5/css-basic/position-3/templates/assets/icon-close.svg');
 }
 
-.card-carousel {
-}
-
-#prev {
-  background-image: url('https://raw.githubusercontent.com/rohjs/bugless-101/cc64c9b6e3b2b5a230bd0b0507c2e2fe9ec0a2e5/css-basic/position-2/templates/assets/icon-backward.svg');
-  position: absolute;
-  top: 108px;
-  left: 14px;
-}
-
-#next {
-  background-image: url('https://raw.githubusercontent.com/rohjs/bugless-101/cc64c9b6e3b2b5a230bd0b0507c2e2fe9ec0a2e5/css-basic/position-2/templates/assets/icon-forward.svg');
-  position: absolute;
-  top: 108px;
-  right: 14px;
-}
-
-.card-content {
-  padding: 12px 16px;
-}
-
-.card-content h1 {
-  font-family: "Noto" "Sans" "CJK" "KR";
+.modal-title {
   color: #1F2D3D;
-  font-size: 22px;
-  line-height: 32px;;
-  letter-spacing: -0.1em;
+  margin-bottom: 4px;
 }
 
-.company {
-  margin-top: 2px;
+.modal-title, .modal-desc {
+  text-align: center;
+}
+
+.input-group {
+  width: 303px;
   display: block;
-  color: #7D858F;
+  margin: 24px auto 0 auto;
 }
 
-.people {
-  font-size: 16px;
-  color: #273444;
+input {
+  padding: 8px 16px;
+  width: 200px;
+  height: 36px;
+  margin-right: 8px;
+  background-color: #F6F8FA;
+  border: 0;
 }
 
-.card-content strong {
-  position: absolute;
-  right: 16px;
-  bottom: 12px;
-  font-size: 22px;
-  color: #2860E1;
+input::placeholder {
+  color: #8492A6;
+}
+
+.input-group button {
+  background-color: #2860E1;
+  border: 0;
+  border-radius: 4px;
+  color: white;
+  display: inline-block;
+  width: 90px;
+  height: 36px;
 }
