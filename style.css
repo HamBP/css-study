@@ -1,112 +1,23 @@
-* {
-  font-family: Unwind in a Bright Space with Rustic Accents;
-  box-sizing: border-box;
-  margin: 0;
-}
-
-body {
-  background-color: black;
-}
-
-.card {
+.line-button {
   position: relative;
-  background-color: white;
-  width: 840px;
-  display: flex;
-  padding: 24px;
-}
-
-.card-image {
-  background-image: url('/assets/img-house.jpg');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  width: 300px;
-  height: 200px;
-  border-radius: 6px;
-  padding: 12px;
-  margin-right: 24px;
-}
-
-.like-button {
-  width: 36px;
-  height: 36px;
-  background-image: url('/assets/icon-favorite.svg');
-  background-repeat: no-repeat;
-  background-position: center center;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 110px;
+  height: 56px;
   border: 0;
-  border-radius: 50%;
   background-color: white;
-}
-
-.card-header {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 8px;
-}
-
-.property-type {
-  color: #7D858F;
-}
-
-.plus-badge {
-  font-family: Poppins;
-  background-color: #92174D;
-  color:white;
-  border-radius: 4px;
-  line-height: 20px;
-  padding: 1px 8px;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
-.property-rate {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 93px;
-  position: absolute;
-  right: 24px;
   font-size: 16px;
-  background-image: url('/assets/icon-star.svg');
-  background-repeat: no-repeat;
-  background-position: left;
-  background-size: contain;
 }
 
-.property-rate strong {
-  color: #151B26;
-<<<<<<< HEAD
-  position: relative;
-  bottom: 1px;
-=======
->>>>>>> b4929bfc9ce75493d0ca6698f427351f4d76f741
+.line-button:hover::after {
+  width: 110px;
 }
 
-.property-rate span {
-  color: #7D858F;
-<<<<<<< HEAD
-  position: relative;
-  bottom: 1px;
-=======
->>>>>>> b4929bfc9ce75493d0ca6698f427351f4d76f741
-}
-
-.card-title {
-  font-size: 20px;
-  font-weight: 400;
-  margin-bottom: 16px;
-}
-
-.card-detail {
-  color: #7D858F;
-}
-
-.sr-only {
-  display: none;
-}
-
-.property-detail div {
-  margin-bottom: 8px;
+button::after {
+  content: "";
+  position: absolute;
+  transition: width 250ms ease-in;
+  background-color: #0066FF;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
 }
