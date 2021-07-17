@@ -1,98 +1,106 @@
-/* 
-https://github.com/rohjs/bugless-101/blob/master/css-basic/media-query/templates/assets/img-bg.jpg?raw=true
-*/
-
 * {
-  font-family: Noto Sans CJK KR;
-  padding: 0px;
-  margin: 0px;
+  font-family: Unwind in a Bright Space with Rustic Accents;
   box-sizing: border-box;
-  text-align: center;
+  margin: 0;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
   background-color: black;
 }
 
-.banner {
-  padding: 28px;
-  background-color: #FFC82C;
-}
-
-.landing {
-  background-position: center;
-  padding-top: 169px;
+.card {
+  position: relative;
   background-color: white;
-  background-image: url('/assets/img-bg.jpg');
+  width: 840px;
+  display: flex;
+  padding: 24px;
+}
+
+.card-image {
+  background-image: url('/assets/img-house.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
-  color: white;
-  font-size: 50px;
-  font-weight: 900;
+  width: 300px;
+  height: 200px;
+  border-radius: 6px;
+  padding: 12px;
+  margin-right: 24px;
 }
 
-a {
-  color: #1F2D3D;
-  font-size: 18px;
-  text-decoration: none;
-  font-weight: 700;
+.like-button {
+  width: 36px;
+  height: 36px;
+  background-image: url('/assets/icon-favorite.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: 0;
+  border-radius: 50%;
+  background-color: white;
 }
 
-.landing a {
-  color: white;
-  border: 2px solid white;
-  border-radius: 16px;
-  padding: 16px 38px;
-  text-decoration: none;
-  background-color: rgba(0, 0, 0, 0.5);
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
 }
 
-@media screen and (max-width: 568px) {
-  body {
-    flex-direction: column;
-  }
+.property-type {
+  color: #7D858F;
+}
 
-  .landing {
-    display: flex;
-    flex-direction: column;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: auto;
-    padding: 0 20px 128px 0;
-    align-items: flex-end;
-    justify-content: center;
-  }
+.plus-badge {
+  font-family: Poppins;
+  background-color: #92174D;
+  color:white;
+  border-radius: 4px;
+  line-height: 20px;
+  padding: 1px 8px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
 
-  .landing strong {
-    text-align: right;
-    display: block;
-  }
+.property-rate {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 93px;
+  position: absolute;
+  right: 24px;
+  font-size: 16px;
+  background-image: url('/assets/icon-star.svg');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+}
 
-  .landing h1 {
-    text-align: right;
-    font-size: 32px;
-    margin-bottom: 24px;
-  }
+.property-rate strong {
+  color: #151B26;
+  position: relative;
+  bottom: 1px;
+}
 
-  a.landing-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    width: 160px;
-    height: 52px;
-    font-size: 15px;
-  }
+.property-rate span {
+  color: #7D858F;
+  position: relative;
+  bottom: 1px;
+}
 
-  .banner {
-    display: flex;
-    height: 64px;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    padding: 0;
-    justify-content: center;
-    align-items: center;
-  }
+.card-title {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.card-detail {
+  color: #7D858F;
+}
+
+.sr-only {
+  display: none;
+}
+
+.property-detail div {
+  margin-bottom: 8px;
 }

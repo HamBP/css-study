@@ -1,35 +1,60 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Media Query</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700;900&family=Poppins:wght@700&display=swap"
-      rel="stylesheet"
-    />
+    <title>Background</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <aside class="banner">
-      <h1 class="banner-title">
-        <a href="#">
-          🚗 8월 게스트 신청하기
-        </a>
-      </h1>
-    </aside>
+    <article class="card">
+      <div class="card-image">
+        <button type="button" class="like-button" aria-label="Like this property"></button>
+        <!-- <img/> 대신 background-image를 활용해서 스타일 해보세요!  -->
+        <!-- <img src="./assets/img-house.jpg" alt="Seoul AirBnB, hosted by Woohyeon Roh" /> -->
+      </div>
 
-    <section class="landing">
-      <h1 class="landing-title">
-        <strong lang="en">Eat, pray, work</strong>
-        김버그의<br />
-        디지털노마드 민박<br />
-        #치앙마이<br />
-        #8월예약오픈
-      </h1>
-      <a href="#" class="landing-link">
-        민박 둘러보기
-      </a>
-    </section>
+      <div class="card-content">
+        <header class="card-header">
+          <div class="property-type">
+            <strong class="plus-badge">Plus</strong>
+            <span>Entire apartment</span>
+          </div>
+
+          <div class="property-rate">
+            <strong aria-label="Review: 4.97">
+              4.97
+            </strong>
+            <span aria-label="Total 203 reviews">(203)</span>
+          </div>
+        </header>
+
+        <h1 class="card-title">
+          Unwind in a Bright Space with Rustic Accents
+        </h1>
+
+        <div class="card-detail">
+          <dl class="property-detail">
+            <div>
+              <dt class="sr-only">Rooms and beds</dt>
+              <dd>
+                <span>2 guests</span>
+                <span>1 bedroom</span>
+                <span>1 bed</span>
+                <span>1 bath</span>
+              </dd>
+            </div>
+
+            <div>
+              <dt class="sr-only">Amenities</dt>
+              <dd>
+                <span>Wifi</span>
+                <span>Kitchen</span>
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </article>
   </body>
 </html>
