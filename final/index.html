@@ -58,7 +58,7 @@
   </div>
 
   <!-- program -->
-  <div class="program container">
+  <div class="program">
     <span class="mb-16">Program</span>
     <h2 class="text-center">
       Frontend Dev.<br/>
@@ -68,51 +68,95 @@
       Your best course for career transformation in front-end developement. This <br/>
       full-time bootcamp features expert instruction, one-on-one career coaching, <br/>
       and connections to top employers to get you hired.</p>
-    <div class="row flex-row">
-      <div class="card text-center card-side">
-        <span class="ft-campus"></span>
-        Full-Time On Campus
-      </div>
-      <div class="card text-center card-center">
-        <span class="ft-remote"></span>
-        Full-Time Remote
-      </div>
-      <div class="card text-center card-side">
-        <span class="pt-flex"></span>
-        Part-Time Flex
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <div class="card text-center card-side">
+            <span class="ft-campus"></span>
+            Full-Time On Campus
+          </div>
         </div>
+        <div class="col-4">
+          <div class="card text-center card-center">
+            <span class="ft-remote"></span>
+            Full-Time Remote
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card text-center card-side">
+            <span class="pt-flex"></span>
+            Part-Time Flex
+            </div>
+        </div>
+      </div>
     </div>
+    
   </div>
 
   <!-- curriculum -->
   <div class="curriculum">
-    <span>Curriculum</span>
-    <h2>Dive into the web development</h2>
-    <p>Dive into the software development environment and the basics of computing, networks, and data structures.</p>
-    <button>Lean more</button>
-    <p>
-      <strong>Real-World Projects.</strong> Solve challenges that professional engineers face as you work individually and in teams with designers.
-    </p>
-    <p>
-      <strong>Individualised Instructor Support.</strong> Get guidance, feedback, and more during scheduled one-on-one check-ins.
-    </p>
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <span class="mb-16">Curriculum</span>
+            <h2>
+              Dive into the web <br/>
+              development
+            </h2>
+            <p class="mb-72">
+              Dive into the software development <br/>
+              environment and the basics of computing, <br/>
+              networks, and data structures.
+            </p>
+            <button class="btn btn-blue">Lean more</button>
+        </div>
+
+        <div class="col-6">
+          <img src="./assets/img-curriculum.png" alt="">
+        
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+          <p>
+            <strong>Real-World Projects.</strong> Solve challenges that professional engineers face as you work individually and in teams with designers.
+          </p>
+        </div>
+        <div class="col-6">
+          <p>
+            <strong>Individualised Instructor Support.</strong> Get guidance, feedback, and more during scheduled one-on-one check-ins.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- subscription -->
-  <div class="subcription">
-    <h2>Stay with us</h2>
-    <p>Subscribe to our email newsletter to stay up to date on the latest updates</p>
-    <input type="text" placeholder="Enter your email">
-    <button>Get started</button>
-    <span>Cancel any time. Check out <a href="">Terms of Use.</a></span>
-    <button>Get started</button>
+  <div class="subscription">
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <span class="img-banner"></span>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-7 col-center">
+          <h2>Stay with us</h2>
+          <p>Subscribe to our email newsletter to stay up to date on the latest updates</p>
+          <input class="input-email" type="text" placeholder="Enter your email">
+          <button class="btn btn-blue">Get started</button>
+          <span>Cancel any time. Check out <a href="">Terms of Use.</a></span>
+        </div>
+      </div>
+    </div>
+    
   </div>
 
   <!-- footer -->
-  <footer>
-    <a href="">Terms</a>
-    <a href="">Privacy</a>
-    <a href="">License</a>
+  <footer class="container">
+    <a href="" class="mr-16">Terms</a>
+    <a href="" class="mr-16">Privacy</a>
+    <a href="" class="mr-16">License</a>
   </footer>
 </body>
 </html>
