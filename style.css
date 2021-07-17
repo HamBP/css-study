@@ -1,23 +1,45 @@
-.line-button {
-  position: relative;
-  width: 110px;
-  height: 56px;
-  border: 0;
-  background-color: white;
-  font-size: 16px;
+.loading-title {
+  margin-top: 80px;
+  text-align: center;
+  color: black;
+  animation: fade 1000ms ease-in-out infinite;
+  animation-direction: alternate;
 }
 
-.line-button:hover::after {
-  width: 110px;
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
-button::after {
-  content: "";
-  position: absolute;
-  transition: width 250ms ease-in;
-  background-color: #0066FF;
-  width: 0;
-  height: 2px;
-  bottom: 0;
-  left: 0;
+.progress-bar {
+  margin: auto;
+  width: 300px;
+  height: 12px;
+  background-color: #E5EAEF;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.progress-bar-gauge {
+  display: block;
+  width: 100%;
+  height: 12px;
+  background-color: #13CE66;
+  animation: anima 3000ms linear;
+  animation-iteration-count: initial;
+}
+
+@keyframes anima {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
 }
