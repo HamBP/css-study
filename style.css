@@ -77,14 +77,20 @@ body {
 
 .property-rate strong {
   color: #151B26;
+<<<<<<< HEAD
   position: relative;
   bottom: 1px;
+=======
+>>>>>>> b4929bfc9ce75493d0ca6698f427351f4d76f741
 }
 
 .property-rate span {
   color: #7D858F;
+<<<<<<< HEAD
   position: relative;
   bottom: 1px;
+=======
+>>>>>>> b4929bfc9ce75493d0ca6698f427351f4d76f741
 }
 
 .card-title {
