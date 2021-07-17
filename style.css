@@ -1,45 +1,45 @@
-.loading-title {
-  margin-top: 80px;
-  text-align: center;
-  color: black;
-  animation: fade 1000ms ease-in-out infinite;
-  animation-direction: alternate;
+* {
+  font-family: Noto Sans CJK KR;
+  margin: 0;
+  box-sizing: border-box;
+  letter-spacing: -0.015em;
 }
 
-@keyframes fade {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
+html {
+  background-color: black;
 }
 
-.progress-bar {
+body {
   margin: auto;
-  width: 300px;
-  height: 12px;
-  background-color: #E5EAEF;
-  border-radius: 6px;
-  overflow: hidden;
+  width: 736px;
+  height: 900px;
+  padding: 48px;
+  background-color: white;
 }
 
-.progress-bar-gauge {
-  display: block;
-  width: 100%;
-  height: 12px;
-  background-color: #13CE66;
-  animation: anima 3000ms linear;
-  animation-iteration-count: initial;
+h1 {
+  color: #151B26;
+  size: 34px;
+  margin-bottom: 48px;
 }
 
-@keyframes anima {
-  from {
-    width: 0;
-  }
+h2 {
+  font-weight: 400;
+  color: #151B26;
+  size: 28px;
+  margin-bottom: 24px;
+}
 
-  to {
-    width: 100%;
-  }
+span {
+  color: #FF5216;
+}
+
+h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 32px;
 }
