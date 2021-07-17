@@ -50,6 +50,10 @@ p {
   text-align: right;
 }
 
+span {
+  display: block;
+}
+
 /* margin */
 
 .mr-16 {
@@ -98,6 +102,12 @@ p {
   justify-content: center;
 }
 
+@media screen and (max-width: 768px) {
+  .landing {
+    padding: 0 15px;
+  }
+}
+
 /* service */
 
 .service {
@@ -118,6 +128,14 @@ p {
   color: #009B4D;
   font-weight: bold;
   font-size: 22px;
+}
+
+.program p {
+  text-align: center;
+}
+
+.program .sub-title {
+  text-align: center;
 }
 
 .program .card {
@@ -165,6 +183,21 @@ p {
 
 .pt-flex {
   background-image: url('./assets/img-parttime-flex.png');
+}
+
+/* program mobile */
+
+@media screen and (max-width: 768px) {
+  .program span,
+  .program .sub-title {
+    margin: 0 15px;
+    text-align: left;
+  }
+
+  .program p {
+    margin: 0 15px;
+    text-align: left;
+  }
 }
 
 /* curriculum */
@@ -241,6 +274,12 @@ p {
   color: #3040C4;
 }
 
+@media screen and (max-width: 768px) {
+  .curriculum img {
+    display: none;
+  }
+}
+
 /* footer */
 
 footer {
@@ -253,4 +292,10 @@ footer a {
   letter-spacing: -0.01em;
   line-height: 24px;
   color: #807F81;
+}
+
+@media screen and (max-width: 768px) {
+  footer a {
+    display: block;
+  }
 }
