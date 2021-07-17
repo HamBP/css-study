@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: DM Sans;
+  color: #2B292D;
+}
+
+/* text */
+
+h1 {
+  font-size: 70px;
+  line-height: 72px;
+  letter-spacing: -0.05em;
+  margin-bottom: 32px;
+}
+
+h2 {
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -0.03em;
+  margin-bottom: 32px;
+}
+
+h3 {
+  font-size: 26px;
+  line-height: 34px;
+  letter-spacing: -0.04em;
+  margin-bottom: 16px;
+}
+
+p {
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+  margin-bottom: 32px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* margin */
+
+.mr-16 {
+  margin-right: 16px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-72 {
+  margin-bottom: 72px;
+}
+
+/* button */
+
+.btn {
+  display: inline-block;
+  width: 160px;
+  height: 56px;
+  border: 0;
+  border-radius: 2px;
+}
+
+.btn-white {
+  background-color: white;
+  color: #3040C4;
+}
+
+.btn-blue {
+  background-color: #3040C4;
+  color: white;
+}
+
+/* landing */
+
+.landing {
+  padding: 120px 0;
+  background-color: #FDDED8;
+}
+
+.landing .buttons {
+  display: flex;
+  justify-content: center;
+}
+
+/* service */
+
+.service {
+  width: 100%;
+  padding: 80px 0;
+  background-color: #F4F5F7;
+}
+
+/* program */
+
+.program {
+  padding: 80px 0 96px 0 ;
+}
+
+.program span {
+  display: block;
+  text-align: center;
+  color: #009B4D;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.program .card {
+  width: 290px;
+  height: 300px;
+  border-radius: 8px;
+  padding: 24px 0 32px 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-center {
+  background-color: #3141C5;
+  color: white;
+  box-shadow: 
+  0px 13px 18px rgba(0, 0, 0, 0.15), 
+  0px 11px 55px rgba(0, 0, 0, 0.07);
+}
+
+.card-side {
+  box-shadow: 
+  0px 1px 3px rgba(0, 0, 0, 0.1), 
+  0px 4px 6px rgba(0, 0, 0, 0.05), 
+  inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+}
+
+.ft-campus,
+.ft-remote,
+.pt-flex {
+  display: block;
+  margin: auto;
+  height: 195px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 24px;
+}
+
+.ft-campus {
+  background-image: url('./assets/img-fulltime-campus.png');
+}
+
+.ft-remote {
+  background-image: url('./assets/img-fulltime-remote.png');
+}
+
+.pt-flex {
+  background-image: url('./assets/img-parttime-flex.png');
+}
